@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maribeth Laureen | SEO and GEO Specialist for AI-Era Search</title>
+<meta name="description" content="Senior digital marketer with 11 years in SEO and 2 years building GEO and agentic AI workflows that get brands cited by ChatGPT, Perplexity, and Google AI.">
+<style>
+  :root{
+    --dark:#32373c;
+    --darker:#28303D;
+    --accent:#0693e3;
+    --accent-dark:#007cba;
+    --gray:#39414D;
+    --light:#f5f7fa;
+    --text:#313131;
+    --border:#e5e9ef;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;line-height:1.65;color:var(--text);background:#fff;
+  }
+  .preview-banner{
+    background:#fff8dc;border-bottom:1px solid #e8d97f;padding:10px 20px;
+    text-align:center;font-size:14px;color:#665a1d;
+  }
+  .preview-banner strong{color:#3d3409}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  nav{
+    padding:22px 0;border-bottom:1px solid var(--border);
+    position:sticky;top:0;background:#fff;z-index:50;
+  }
+  nav .container{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:700;font-size:20px;color:var(--darker);text-decoration:none}
+  .nav-links{display:flex;gap:32px;list-style:none}
+  .nav-links a{color:var(--gray);text-decoration:none;font-size:15px;font-weight:500}
+  .nav-links a:hover{color:var(--accent)}
+
+  /* HERO */
+  .hero{padding:90px 0 100px;background:linear-gradient(180deg,#fafbfd 0%,#fff 100%)}
+  .hero .container{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center}
+  .hero h1{
+    font-size:54px;line-height:1.1;font-weight:800;
+    color:var(--darker);margin-bottom:22px;letter-spacing:-1px;
+  }
+  .hero h1 .accent{color:var(--accent)}
+  .hero p.sub{font-size:19px;line-height:1.55;color:#525864;margin-bottom:34px;max-width:560px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:15px 32px;border-radius:9999px;
+    font-weight:600;font-size:16px;text-decoration:none;
+    transition:transform .15s ease,box-shadow .15s ease;
+  }
+  .btn-primary{background:var(--darker);color:#fff}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(40,48,61,.25)}
+  .btn-secondary{background:transparent;color:var(--darker);border:2px solid var(--darker);padding:13px 30px}
+  .btn-secondary:hover{background:var(--darker);color:#fff}
+  .hero-img{
+    width:100%;aspect-ratio:558/662;background:linear-gradient(135deg,#1a3a52 0%,#2d5a7c 50%,#0693e3 100%);
+    border-radius:16px;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:18px;opacity:.92;
+    box-shadow:0 30px 60px -20px rgba(40,48,61,.25);
+  }
+
+  /* CREDENTIALS BAND */
+  .creds{padding:60px 0;background:var(--light);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .creds .lead{text-align:center;font-size:15px;color:#525864;margin-bottom:30px;max-width:780px;margin-left:auto;margin-right:auto}
+  .badges{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+  .badge{
+    background:#fff;padding:18px 12px;border-radius:10px;text-align:center;
+    border:1px solid var(--border);font-size:13px;font-weight:600;color:var(--gray);
+  }
+  .badge .ico{font-size:22px;margin-bottom:6px;display:block}
+
+  /* SECTION SHARED */
+  section.block{padding:90px 0}
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:2px;font-size:13px;
+    color:var(--accent);font-weight:700;margin-bottom:12px;
+  }
+  h2{font-size:38px;line-height:1.15;color:var(--darker);font-weight:800;margin-bottom:18px;letter-spacing:-.5px}
+  .section-lead{font-size:18px;color:#525864;max-width:720px;margin-bottom:50px}
+
+  /* WHAT I DO */
+  .what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .what-card{
+    background:#fff;border:1px solid var(--border);border-radius:14px;padding:34px 30px;
+    transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+  }
+  .what-card:hover{transform:translateY(-4px);box-shadow:0 18px 35px -15px rgba(40,48,61,.18);border-color:var(--accent)}
+  .what-card .tag{
+    display:inline-block;background:#eaf6fd;color:var(--accent-dark);
+    padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;
+    text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;
+  }
+  .what-card h3{font-size:22px;color:var(--darker);margin-bottom:12px;font-weight:700}
+  .what-card p{color:#525864;font-size:15.5px;line-height:1.6}
+
+  /* WORK */
+  .work-list{display:flex;flex-direction:column;gap:36px}
+  .work-item{
+    background:#fff;border:1px solid var(--border);border-radius:14px;padding:34px 36px;
+    display:grid;grid-template-columns:1fr 2.2fr;gap:36px;
+  }
+  .work-meta .date{font-size:13px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  .work-meta h3{font-size:22px;color:var(--darker);font-weight:700;line-height:1.25;margin-bottom:6px}
+  .work-meta .company{font-size:14px;color:#79808d}
+  .work-body p{margin-bottom:10px;font-size:16px}
+  .work-body ul{list-style:none;padding:0}
+  .work-body ul li{padding-left:22px;position:relative;margin-bottom:10px;font-size:15.5px;line-height:1.55;color:#3f4651}
+  .work-body ul li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+  /* PORTFOLIO */
+  .port-group{margin-bottom:50px}
+  .port-group h3{font-size:18px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gray);margin-bottom:18px;font-weight:700}
+  .port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .port-card{
+    background:#fff;border:1px solid var(--border);border-radius:10px;padding:22px 22px;
+    font-size:15px;font-weight:600;color:var(--darker);
+    transition:all .2s ease;display:flex;align-items:center;gap:10px;
+  }
+  .port-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .port-card .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0}
+
+  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:14px}
+  .case-card{
+    background:linear-gradient(135deg,#fafbfd,#fff);
+    border:1px solid var(--border);border-radius:14px;padding:28px;
+  }
+  .case-card h4{font-size:18px;color:var(--darker);margin-bottom:10px;font-weight:700}
+  .case-card p{font-size:15px;color:#525864}
+
+  /* CTA */
+  .final-cta{padding:100px 0;background:linear-gradient(135deg,#1a3a52 0%,#28303D 100%);color:#fff;text-align:center}
+  .final-cta h2{color:#fff;font-size:42px;margin-bottom:18px}
+  .final-cta p{font-size:19px;color:#cbd6e2;max-width:680px;margin:0 auto 38px;line-height:1.55}
+  .final-cta form{max-width:520px;margin:0 auto;display:grid;gap:12px}
+  .final-cta input,.final-cta textarea{
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+    color:#fff;padding:14px 18px;border-radius:10px;font-size:15px;font-family:inherit;
+  }
+  .final-cta input::placeholder,.final-cta textarea::placeholder{color:#9aaabc}
+  .final-cta textarea{min-height:110px;resize:vertical}
+  .final-cta button{
+    background:var(--accent);color:#fff;border:0;padding:16px;border-radius:10px;
+    font-size:16px;font-weight:700;cursor:pointer;margin-top:6px;
+  }
+  .final-cta button:hover{background:#0782ca}
+  .trust-row{margin-top:42px;display:flex;justify-content:center;gap:36px;flex-wrap:wrap;color:#9aaabc;font-size:14px}
+  .trust-row span::before{content:"✓ ";color:var(--accent);font-weight:700}
+
+  /* FOOTER */
+  footer{padding:36px 0;background:#1a1f26;color:#9aaabc;text-align:center;font-size:14px}
+  footer a{color:#cbd6e2;text-decoration:none;margin:0 12px}
+
+  /* MOBILE */
+  @media (max-width:900px){
+    .hero{padding:60px 0}
+    .hero .container{grid-template-columns:1fr;gap:40px}
+    .hero h1{font-size:38px}
+    .badges{grid-template-columns:repeat(3,1fr)}
+    .what-grid{grid-template-columns:1fr}
+    .work-item{grid-template-columns:1fr;gap:18px}
+    .port-grid{grid-template-columns:1fr}
+    .case-grid{grid-template-columns:1fr}
+    .nav-links{display:none}
+    h2{font-size:30px}
+    section.block{padding:60px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  <strong>PREVIEW MOCK</strong> — Revised copy for maribethlaureen.info. Design intentionally similar to current site. Hero option A shown.
+</div>
+
+<nav>
+  <div class="container">
+    <a href="#" class="logo">Maribeth Laureen</a>
+    <ul class="nav-links">
+      <li><a href="#what">What I Do</a></li>
+      <li><a href="#work">Experience</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <h1>Get cited by <span class="accent">ChatGPT</span>. Ranked by Google. Recommended by Perplexity.</h1>
+      <p class="sub">11 years building SEO programs for service businesses, vacation rentals, healthcare, and home services. Today I run agentic AI workflows and Generative Engine Optimization so your brand gets surfaced in AI answers, not buried on page two.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+        <a href="#portfolio" class="btn btn-secondary">See My Work</a>
+      </div>
+    </div>
+    <div class="hero-img">[Hero portrait / image]</div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="creds">
+  <div class="container">
+    <p class="lead">Certified across the modern marketing stack: Customer Value Optimization, Analytics, Customer Acquisition, Search Marketing, Optimization &amp; Testing, and Semrush Academy.</p>
+    <div class="badges">
+      <div class="badge"><span class="ico">🎯</span>Customer Value Optimization</div>
+      <div class="badge"><span class="ico">📊</span>Analytics Data Specialist</div>
+      <div class="badge"><span class="ico">📈</span>Customer Acquisition</div>
+      <div class="badge"><span class="ico">🔍</span>Search Marketing</div>
+      <div class="badge"><span class="ico">🧪</span>Optimization &amp; Testing</div>
+      <div class="badge"><span class="ico">🎓</span>Semrush Academy</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section class="block" id="what">
+  <div class="container">
+    <div class="eyebrow">What I Do</div>
+    <h2>Three services. One goal: visibility wherever buyers now search.</h2>
+    <p class="section-lead">Most marketers still optimize for Google alone. The buyer journey has moved. Half your prospects are already asking ChatGPT and Perplexity for recommendations. I cover both.</p>
+
+    <div class="what-grid">
+      <div class="what-card">
+        <span class="tag">SEO</span>
+        <h3>SEO that still works in 2026</h3>
+        <p>Technical fixes, on-page optimization, GSC monitoring, and content built for both Google and the AI crawlers (GPTBot, ClaudeBot, PerplexityBot). I treat AI visibility as a measurable channel, not a buzzword.</p>
+      </div>
+      <div class="what-card">
+        <span class="tag">GEO</span>
+        <h3>Generative Engine Optimization</h3>
+        <p>Structured content, entity coverage, citation-worthy facts, and schema patterns that get your brand named when someone asks ChatGPT or Perplexity for a recommendation. Most sites are invisible here. Fixing that is the highest-leverage SEO work available today.</p>
+      </div>
+      <div class="what-card">
+        <span class="tag">Agentic AI</span>
+        <h3>AI Workflows That Scale</h3>
+        <p>I build and run AI workflows that handle keyword research, content drafts, internal linking, and reporting at a fraction of the manual cost. Inside my current programs, AI integration cut content turnaround by roughly 40 percent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="block" id="work" style="background:var(--light)">
+  <div class="container">
+    <div class="eyebrow">Experience</div>
+    <h2>11 years of operator experience, not theory.</h2>
+
+    <div class="work-list">
+
+      <div class="work-item">
+        <div class="work-meta">
+          <div class="date">Aug 2024 – Present</div>
+          <h3>Marketing Specialist</h3>
+          <div class="company">Danner Enterprises · Vacation Rental Agency</div>
+        </div>
+        <div class="work-body">
+          <p>Run end-to-end SEO and GEO for a multi-property vacation rental brand in the Branson, Missouri market.</p>
+          <ul>
+            <li>Content strategy, on-page optimization, and Core Web Vitals monitoring across the property portfolio</li>
+            <li>Google Business Profile management with NAP consistency and citation cleanup</li>
+            <li>Monthly performance reports tying organic traffic, booking clicks, and CRO results to revenue</li>
+            <li>Developer coordination through GSC monitoring and structured issue tickets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work-meta">
+          <div class="date">Feb 2014 – Present</div>
+          <h3>Senior Digital Marketing Manager</h3>
+          <div class="company">Infintech Designs · Web Design &amp; Digital Marketing Agency</div>
+        </div>
+        <div class="work-body">
+          <p>Senior SEO lead across the agency's client roster in home services, healthcare, and local service brands.</p>
+          <ul>
+            <li>Keyword strategy, technical audits, link development, and CRO testing</li>
+            <li>Pioneered the agency's AI workflow integration, reducing content production time by about 40 percent</li>
+            <li>Long-form content systems optimized for both classic search and AI parsing</li>
+            <li>Coach junior marketers and writers on modern SEO process</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work-meta">
+          <div class="date">Sept 2010 – July 2014</div>
+          <h3>Research Analyst</h3>
+          <div class="company">Isentia Manila · Media Intelligence</div>
+        </div>
+        <div class="work-body">
+          <p>Monitored brand sentiment and social trends for enterprise clients. Classified article sentiment, hit reporting SLAs, and supported brand crisis response.</p>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work-meta">
+          <div class="date">Jan 2007 – June 2010</div>
+          <h3>Senior Shift Supervisor</h3>
+          <div class="company">One-Outsource Direct Corp.</div>
+        </div>
+        <div class="work-body">
+          <p>Customer service and food delivery operations. Trained and managed frontline staff, set policy, and ran performance reviews. Foundation in operations and people management that still shows up in how I run client programs today.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="block" id="portfolio">
+  <div class="container">
+    <div class="eyebrow">Selected Work</div>
+    <h2>A sample of brands I've helped grow.</h2>
+    <p class="section-lead">Click through to see the live work.</p>
+
+    <div class="port-group">
+      <h3>Landing Pages</h3>
+      <div class="port-grid">
+        <a class="port-card"><span class="dot"></span>roboteams.ai</a>
+        <a class="port-card"><span class="dot"></span>sadeghiplasticsurgery.co</a>
+        <a class="port-card"><span class="dot"></span>teleleaflouisiana.co</a>
+        <a class="port-card"><span class="dot"></span>kindhomesolutions.co</a>
+        <a class="port-card"><span class="dot"></span>infintechdesigns.com/web-design-seo/</a>
+      </div>
+    </div>
+
+    <div class="port-group">
+      <h3>Sites I've Managed</h3>
+      <div class="port-grid">
+        <a class="port-card"><span class="dot"></span>bigeasyroofing.com</a>
+        <a class="port-card"><span class="dot"></span>turnkeyroofers.com</a>
+        <a class="port-card"><span class="dot"></span>bigeasyroofteam.com</a>
+        <a class="port-card"><span class="dot"></span>cali.solar</a>
+        <a class="port-card"><span class="dot"></span>harmoniahealthsolutions.com</a>
+      </div>
+    </div>
+
+    <div class="port-group">
+      <h3>Featured Case Studies</h3>
+      <div class="case-grid">
+        <div class="case-card">
+          <h4>Plumbing Co.</h4>
+          <p>Built the full service-page architecture, rewrote the location pages for AI parsing, and tightened the booking funnel. Cleaner ranking footprint plus a measurable lift in lead form conversions.</p>
+        </div>
+        <div class="case-card">
+          <h4>Protection Dogs</h4>
+          <p>Led design direction and CRO testing, coordinated client approvals, and shipped a redesigned site optimized for high-intent buyers.</p>
+        </div>
+        <div class="case-card">
+          <h4>Painting Company</h4>
+          <p>Full design refresh, CRO improvements, URL migration, and GSC cleanup. Stabilized rankings through the migration with zero drop in organic traffic.</p>
+        </div>
+        <div class="case-card">
+          <h4>Medical Marijuana</h4>
+          <p>Site design and CRO program for a regulated vertical. Built compliant messaging, conversion-focused funnels, and trust signals tuned for the category.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="contact">
+  <div class="container">
+    <h2>Want to be the brand AI recommends?</h2>
+    <p>Tell me about your site and your market. I'll come back with a short read on where you stand in classic search, where you stand in AI answers, and what to fix first.</p>
+    <form onsubmit="event.preventDefault();alert('Form submission disabled in preview.')">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email address" required>
+      <input type="tel" placeholder="Phone (optional)">
+      <textarea placeholder="Tell me about your site and goal..."></textarea>
+      <button type="submit">Send My Free Read</button>
+    </form>
+    <div class="trust-row">
+      <span>11 years in SEO. 2 years deep in GEO and agentic AI</span>
+      <span>Vacation rental, home services, healthcare, local brands</span>
+      <span>Based in the Philippines. Clients across the US</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 Maribeth Laureen Binuya ·
+    <a href="mailto:hello@maribethlaureen.info">Email</a> ·
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
